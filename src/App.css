@@ -1,0 +1,385 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171515;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px;
+}
+
+.container-main {
+  display: flex;
+}
+
+.container-box {
+  flex: 1;
+  margin: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgba(60, 60, 60, 0.5);
+  border-radius: 15px;
+  /* animation-name: float;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  */
+}
+
+.container-title {
+  text-align: center;
+}
+
+.container-sort {
+  margin-left: 30px;
+}
+
+select {
+  border-radius: 15px;
+}
+
+.rotate {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 25px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+.topnav-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 25px;
+  padding: 10px;
+  background-color: rgba(40, 40, 40, 0.5);
+  /* border: 2px solid rgba(29,185,84); */
+  border-radius: 15px;
+  align-items: center;
+}
+
+.topnav {
+  background-color: #1db954;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(29,185,84);
+}
+
+.search {
+  margin-left: 20px;
+  background-color: #fff; /* Change the color to your preference */
+  border-radius: 5px;
+}
+
+.search-container {
+  text-align: center;
+}
+
+.logo-container {
+  flex-grow: 1;
+}
+
+input.search {
+  height: 30px;
+  width: 400px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 12px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: rgba(29,185,84);
+  color: #121212;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(27, 168, 76);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* POPPINS */
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-semibold-music {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.poppins-semibold-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline;
+  margin-left: 50px;
+}
+
+.poppins-semibold-sort {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.poppins-bold-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 50px;
+  display: inline;
+  color: rgba(29,185,84);
+}
+
+.poppins-bold-logo {
+  color: #fff;
+  font-size: 30px;
+}
+
+.poppins-bold-music-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: inline;
+  line-height: 1.2;
+  font-size: 35px;
+  padding: 0%;
+}
+
+.poppins-medium-music-artist {
+  font-family: "Poppins", sans-serif;
+  font-weight: 525;
+  font-style: normal;
+  display: inline;
+  line-height: 0;
+  font-size: 20px;
+  padding: 0%;
+}
+
+.poppins-medium-music-album {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline;
+  line-height: 0;
+  font-size: 20px;
+  padding: 0%;
+}
+
+.poppins-bold-logo-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(27, 168, 76);
+  font-size: 100px;
+  padding-top: 50px;
+  line-height: 0;
+}
+
+.poppins-bold-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(27, 168, 76);
+  padding-bottom: 50px;
+}
+
+.poppins-bold-select {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* Playlist Card */
+.song-card {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.song-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.song-info {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.song-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.song-artist {
+  color: #b3b3b3;
+}
+
+.play-button {
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Music Card */
+.music-card {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.music-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.music-info {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.music-name {
+  font-weight: bold;
+  color: #fff;
+}
+
+.music-artist {
+  color: #b3b3b3;
+}
+
+/* Pagination css */
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  background-color: #1db954;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.page-link:hover {
+  background-color: #1a7f3f;
+}
+
+/* Playlist Card */
+.playlist-card {
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Other CSS */
+
+.sort-dropdown {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.music-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-playlist-button {
+  float: right;
+}
